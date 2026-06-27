@@ -26,6 +26,11 @@ Diferente da estrutura convencional de scripts da IDE do Arduino, o software foi
 * **Sensores:** Sensor de Umidade do Solo Capacitivo, Sensor Ultrassônico e Sensor de Temperatura e Umidade Ambiente (DHT)
 * **Atuador:** Módulo Relé para acionamento do sistema de bombagem
 
+## Esquema Eletrónico
+O diagrama completo com todas as conexões elétricas, pinagens do ATmega328P e interligações de todos os sensores e módulos está disponível para consulta:
+
+* 📄 [Clique aqui para abrir o PDF do Esquematico Completo](esquematico_irrigacao_inteligente.pdf)
+
 ## Contexto Acadêmico
 Projeto desenvolvido como atividade prática para o curso de Engenharia de Controle e Automação na UFRPE - UABJ, servindo como registro técnico e relatório de aplicação prática de conceitos de programação e circuitos eletrônicos.
 
@@ -54,6 +59,11 @@ Unlike the conventional high-level scripts from the Arduino IDE, the software wa
 * **Visual Interface:** 1.8" TFT Screen (ST7735 Driver)
 * **Sensors:** Capacitive Soil Moisture Sensor, Ultrasonic Sensor, and Ambient Temperature and Humidity Sensor (DHT)
 * **Actuator:** Relay Module to trigger the water pump system
+
+## Electronic Schematic
+The complete diagram containing all electrical connections, ATmega328P pinouts, and interconnections for all sensors and modules is available for reference:
+
+* 📄 [Click here to open the Complete Schematic PDF](esquematico_irrigacao_inteligente.pdf)
 
 ## Academic Context
 Project developed as a practical activity for the Control and Automation Engineering course at UFRPE - UABJ, serving as a technical record and practical application report of programming and electronic circuit concepts.
