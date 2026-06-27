@@ -34,9 +34,6 @@ O diagrama completo com todas as conexões elétricas, pinagens do ATmega328P e 
 ## Contexto Acadêmico
 Projeto desenvolvido como atividade prática para o curso de Engenharia de Controle e Automação na UFRPE - UABJ, servindo como registro técnico e relatório de aplicação prática de conceitos de programação e circuitos eletrônicos.
 
-For the Portuguese version, click [here](README.md).  
-For the English version, you are already here.
-
 ---
 
 
