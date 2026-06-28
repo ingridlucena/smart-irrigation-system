@@ -62,7 +62,7 @@ Project developed as a practical activity for the Control and Automation Enginee
         tft.setCursor(25, 6);
         tft.setTextColor(ST7735_WHITE);
         tft.setTextSize(1);
-        tft.print("MONITORAMENTO");
+        tft.print("MONITORING");
     }
     
     int main(void) {
@@ -90,10 +90,10 @@ Project developed as a practical activity for the Control and Automation Enginee
               desenharCabecalho();
               tft.setCursor(0,50);
               tft.setTextColor(ST7735_BLUE,ST7735_BLACK);
-              tft.print("distancia:");
+              tft.print("distance:");
               tft.print(distance);
               tft.println("cm");
-              tft.println("Capacidade abaixo de 10%");
+              tft.println("Capacity below 10%");
               tone(buzzer, 4000);
               distance=ultrasonic.read();
             } 
@@ -105,47 +105,47 @@ Project developed as a practical activity for the Control and Automation Enginee
               PORTC=0b00000001;
               tft.setCursor(0,30);
               tft.setTextColor(ST7735_BLUE,ST7735_BLACK);
-              tft.print("distancia:");
+              tft.print("distance:");
               tft.print(distance);
               tft.println("cm");
-              tft.println("Reservatorio em 10% de sua capacidade.");
+              tft.println("Tank at 10% capacity.");
             }
     
             else if(distance<=10.5 && distance >9){
               PORTC=0b00000011;
               tft.setCursor(0,30);
               tft.setTextColor(ST7735_BLUE,ST7735_BLACK);
-              tft.print("distancia:");
+              tft.print("distance:");
               tft.print(distance);
               tft.println("cm");
-              tft.println("Reservatorio em 25% de sua capacidade.");
+              tft.println("Tank at 25% capacity.");
             }
             else if(distance<=9 && distance>5.5){
              PORTC=0b00000111;
               tft.setCursor(0,30);
               tft.setTextColor(ST7735_BLUE,ST7735_BLACK);
-              tft.print("distancia:");
+              tft.print("distance:");
               tft.print(distance);
               tft.println("cm");
-              tft.println("Reservatorio em 50% de sua capacidade.");
+              tft.println("Tank at 50% capacity.");
             }
             else if(distance<=5.5 && distance>2){
               PORTC=0b00001111;
               tft.setCursor(0,30);
               tft.setTextColor(ST7735_BLUE,ST7735_BLACK);
-              tft.print("distancia:");
+              tft.print("distance:");
               tft.print(distance);
               tft.println("cm");
-              tft.println("Reservatorio em 75% de sua capacidade.");
+              tft.println("Tank at 75% capacity.");
             }
             else if(distance<=3.8){
               PORTC=0b00011111;
               tft.setCursor(0,30);
               tft.setTextColor(ST7735_BLUE,ST7735_BLACK);
-              tft.print("distancia:");
+              tft.print("distance:");
               tft.print(distance);
               tft.println("cm");
-              tft.println("Reservatorio em 100% de sua capacidade.");
+              tft.println("Tank at 100% capacity.");
             }
         
             float hum = dht.readHumidity();
@@ -153,12 +153,12 @@ Project developed as a practical activity for the Control and Automation Enginee
     
             tft.setCursor(0,60);
             tft.setTextColor(ST7735_YELLOW,ST7735_BLACK);
-            tft.print("UR do ar:");
+            tft.print("Air humidity:");
             tft.print(hum);
             tft.println("%");
             tft.setCursor(0,70);
             tft.setTextColor(ST7735_RED,ST7735_BLACK);
-            tft.print("Temperatura:");
+            tft.print("Temperature:");
             tft.print(temp);
             tft.println(" C");
     
@@ -169,7 +169,7 @@ Project developed as a practical activity for the Control and Automation Enginee
     
             tft.setCursor(0,80);
             tft.setTextColor(ST7735_GREEN,ST7735_BLACK);
-            tft.print("Umidade do solo:");
+            tft.print("Soil moisture:");
             tft.print(soil);
             tft.println("%");
     
@@ -179,8 +179,8 @@ Project developed as a practical activity for the Control and Automation Enginee
     
                 tft.setCursor(0,90);
                 tft.setTextColor(ST7735_CYAN,ST7735_BLACK);
-                tft.print("STATUS DA BOMBA: ");
-                tft.println("ligada");
+                tft.print("PUMP STATUS: ");
+                tft.println("on");
                 delay(1000);
     
     
@@ -190,8 +190,8 @@ Project developed as a practical activity for the Control and Automation Enginee
             else{
             tft.setCursor(0,90);
             tft.setTextColor(ST7735_CYAN,ST7735_BLACK);
-            tft.print("STATUS DA BOMBA: ");
-            tft.println("desligada");
+            tft.print("PUMP STATUS: ");
+            tft.println("off");
     
             }
       
